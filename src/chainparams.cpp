@@ -121,7 +121,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xc"));
 
         // Add seednodes below //
-          vSeeds.push_back(CDNSSeedData("Gheezcoin.com",  "194.135.85.45"));
+          vSeeds.push_back(CDNSSeedData("Gheez.org",  "98.28.193.120"));
           vSeeds.push_back(CDNSSeedData("Gheezcoin.com",  "194.135.84.132"));
          
 
