@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gheez
+Comment=Gheez P2P Cryptocurrency
+Comment[fr]=Gheez, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Gheez, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/Gheez-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/Gheez;
+Categories=Office;
