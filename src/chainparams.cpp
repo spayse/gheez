@@ -78,12 +78,12 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1501714490;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 0;
+        genesis.nNonce   = 130723;
         
        
 				// uncomment to log genesis block info        
       //  start
-        if (true && genesis.GetHash() != hashGenesisBlock)
+        if (false && genesis.GetHash() != hashGenesisBlock)
                        {
                            printf("Searching for genesis block...\n");
                            uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
@@ -117,11 +117,11 @@ public:
         
         
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0xc"));
+        assert(hashGenesisBlock == uint256("0x00000165e6dec915413cfbd10ecf5043f5f90e15f1a202e01f0b708dedee3e01"));
+        assert(genesis.hashMerkleRoot == uint256("0xec401ac329b0d3ae924fb69bc0336837a1f5a7f3aba2bfd731e9af3dc1049969"));
 
         // Add seednodes below //
-          vSeeds.push_back(CDNSSeedData("Gheez.org",  "98.28.193.120"));
+          vSeeds.push_back(CDNSSeedData("Gheez.org","98.28.193.120"));
           vSeeds.push_back(CDNSSeedData("Gheezcoin.com",  "194.135.84.132"));
          
 
@@ -171,7 +171,7 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 22802;
+        genesis.nNonce = 72724;
         genesis.nTime    = 1487718900;
 
         if (false && genesis.GetHash() != hashGenesisBlock)
@@ -205,7 +205,7 @@ public:
                        }
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00003a215c5c76d0840947ff972888b9c8521c6d3ba88453000eed95c0bbf683"));
+        assert(hashGenesisBlock == uint256("0x00008b49fb8979ce8255a05b9661725c21f330786271a2895249f330da5b8619"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -242,7 +242,7 @@ public:
         nDefaultPort = 228881;
         strDataDir = "regtest";
 
-        if (false && genesis.GetHash() != hashGenesisBlock)
+        if (true && genesis.GetHash() != hashGenesisBlock)
                        {
                            printf("Searching for genesis block...\n");
                            uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
@@ -273,7 +273,7 @@ public:
                        }
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x6258d5b30e06b2e241e248ec79de68882178923747ae423764820889bd52ade0"));
+        assert(hashGenesisBlock == uint256("0x0e115afc9f4bc2d0b1f2cd51e4781911ce622a5ae891a21e06bae639ac143c2a"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }
